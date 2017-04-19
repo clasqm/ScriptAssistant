@@ -1,0 +1,38 @@
+sub OpenWindow()
+// Setup the main window here
+	window open across,updown to acrossend, updownend, "MainWindow", "ScriptAssistant"
+	window set "MainWindow", "Look", "Floating"
+	window set "MainWindow", "Flags", "Not-Resizable, Not-Zoomable"//, Accept-First-Click"
+	Window set "MainWindow", "Workspace", "All"
+	Draw Set "DejaVu Sans, Book, 12, regular, 0, 90.0", "MainWindow"
+	//above prevents a mess caused by user changing his system fonts - my button labels barely fit, within a pixel!
+//Top row of widgets
+	view 1,1 to 120,39, "Radio","MainWindow"
+	Draw Set "DejaVu Sans, Book, 12, regular, 0, 90.0", "Radio"
+	Tooltip "Radio","Normal Mode: 165 common commands. \nPro Mode:\t Over 300 Commands.    "
+	Radiobutton 3,0,"ProMode0","NormalMode", promode, "Radio"
+	Radiobutton 3,18,"ProMode1","Pro Mode", promode, "Radio"
+	if promode = 1 then
+		RadioButton set "ProMode0", 0: RadioButton Set "ProMode1", 1
+	else
+		RadioButton set "ProMode0", 1: RadioButton Set "ProMode1", 0
+	endif
+//Middle row of widgets
+	DropBox 0,40 to 39,65, "ABC", "", "MainWindow"
+	Tooltip "ABC", "Select a command and press GO."
+	DropBox Add "ABC", "7"
+	for f = 1 to 26
+		DropBox Add "ABC", chr$(f+64)
+	next f
+	DropBox 40,40 to 162,65, "CLI", "", "MainWindow"
+	Tooltip "CLI", "Select a command and press GO."
+	Generate("A")
+	Button 163,40 to 199,65, "GoButton","GO","MainWindow"
+	Tooltip "GoButton", "Select a command and press GO."
+//Bottom row of widgets
+	TextControl 0,70 to 162,97, "TryText","","","MainWindow"
+	Button 163,70 to 199,94, "TryButton","TRY","MainWindow"
+	ToolTip "TryText", "Enter a non-standard command and ScriptAssistant\nwill try running it with the --help parameter when\nyou press the TRY button."
+	ToolTip "TryButton", "Enter a non-standard command and ScriptAssistant\nwill try running it with the --help parameter when\nyou press the TRY button."
+end sub
+

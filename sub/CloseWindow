@@ -1,0 +1,10 @@
+sub CloseWindow()
+	//when main loop exits, program continues here
+	KillTemp()
+	window close "MainWindow"
+	//Unfortunately the child windows' names are randomly generated so we can't close them down neatly
+	//Unless we write a database holding those names ... too much PT. Does yab not have a Windows Close "All" command?
+	//Oh, well
+	exit
+end sub
+

@@ -1,0 +1,62 @@
+#!yab
+################################
+############# Prologue #############
+################################
+
+//ScriptAssistant v0.2
+//By Michel Clasquin-Johnson <clasqm@zoho.com>
+//Instant help for command-line programs
+//Public Domain software 2009, 2015
+
+//Yabadabbadoo notification
+########DO NOT RENAME THIS FILE!########
+//Yabadabbadoo needs it to function.
+ 
+ 
+//*************************
+//*****Global Variables****
+//*************************
+ 
+## Technically, yab does not require you to declare global variables,
+##It just is a really, really good idea to do it anyway.
+// set DEBUG = 1 to print out all messages on the console
+DEBUG = 1
+//change this to DEBUG = 0 when you are ready to bind the program for distribution
+ 
+tempdir$ = system$("finddir B_COMMON_TEMP_DIRECTORY") 
+tempdir$ = left$(tempdir$, len(tempdir$)-1) //strip off trailing newline
+tempfile$ = tempdir$ + "/ScriptAssistant.tmp"
+displaywins=0
+dispx=50: dispy=50
+promode = 0 
+ 
+ 
+ 
+##########################
+######Preliminary Commands#####
+##########################
+
+## Commands to run before the Main Loop come here.
+## e.g. setting up a window with a menu.
+ 
+ //Read positions and Pro Mode setting from settings file 
+	open #1,"/boot/home/config/settings/ScriptAssistant.settings", "a": close #1 //create the file if it does not exist
+	open "/boot/home/config/settings/ScriptAssistant.settings" for reading as #1
+	line input #1 across
+	line input #1 updown
+	line input #1 promode
+	close #1
+	if across = 0 or updown = 0 then //ie if the settings file was empty
+		across = 100
+		updown = 100
+	endif
+	acrossend = across + 200
+	updownend = updown + 100
+ 
+OpenWindow()
+
+ 
+ 
+ 
+#######End of Prologue#######
+

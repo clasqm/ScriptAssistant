@@ -1,0 +1,34 @@
+name				scriptassistant
+version				0.2.1-2
+architecture			x86_gcc2
+
+summary			"A little utility to display the help content of scripting commands"
+Description			"This little app lets you select a command and throw up a window (up to 12 of them at a time) containing that command's built-in help.
+
+ScriptAssistant has two modes. Normal mode contains the commands you are most likely to need while scripting. Pro Mode contains absolutely everything I could find that I could coax to spit out some help. This is the collection that will keep growing in future updates. 
+
+Of course, any command will only work if that file is actually installed on your system. For example, I might add commands from the package Ghostscript to the database, but if you do not have Ghostscript installed, that will just display an error. The reason for this is that ScriptAssistant does not store the help data: it actually runs the command and captures the result for display. This way, the help you get is always the latest version.
+
+But you've added stuff since you installed Haiku, stuff I haven't gotten around to adding yet. No problem. Type the name of the command (don't bother typing the --help parameter) in the textbox at the bottom and click on TRY. 
+
+I wrote this program for my own amusement and It is now feature-complete as far as I am concerned. But please send bug reports.
+
+Menu position: Applications | Development
+"
+
+packager			"Michel Clasquin-Johnson <clasqm@zoho.com>"
+vendor				"clasqm"
+copyrights			"2015 Michel Clasquin-Johnson <clasqm@zoho.com>"
+licenses				"Public Domain"
+provides {
+					scriptassistant = 0.2.1-2
+					app:Scriptassistant
+					cmd:scriptassistant
+}
+requires {
+					haiku>=r1~alpha4_pm_hrev50032-1
+					yab>=1.7.5.2
+}
+urls {
+					http://clasquin-Johnson.co.za/michel/haiku
+}

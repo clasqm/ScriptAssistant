@@ -1,0 +1,6 @@
+sub KillTemp()
+	local dothis$
+	dothis$ = "rm -f " + tempfile$
+	system(dothis$)
+end sub
+

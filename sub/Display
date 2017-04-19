@@ -1,0 +1,17 @@
+sub Display(thestring$)
+	local WindowID$, ButtonID$, TextID$,stamp$, startx, starty
+	stamp$=system$("date +%s")
+	WindowID$= "W" + stamp$: ButtonID$= "XB" + stamp$: TextID$= "T" + stamp$
+	if lower$(left$(action$,10)) = "timeout 5 " action$ = mid$ (action$, len(action$) - 10) //remove timeout from window title
+	Window Open dispx,dispy to dispx +600,dispy + 425, WindowID$, "Output of " + action$
+	Window Set WindowID$, "Look","Floating"
+	Window Set WindowID$, "Flags","Not-Resizable, Not-Zoomable, Not-Closable, Accept-First-Click"
+	Button 270,395 to 330, 413, ButtonID$, "Close", WindowID$
+	TextEdit 1,1 to 600,390, TextID$, 1,WindowID$
+	TextEdit set TextID$, "editable", false
+	TextEdit Add TextID$, thestring$
+	dispx=dispx +20: dispy=dispy + 15
+	displaywins=displaywins + 1
+	if displaywins=6 dispx=50: dispy=50
+end sub
+

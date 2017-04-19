@@ -1,0 +1,27 @@
+dim msg$(1)
+while(not leavingLoop)
+	nCommands = token(message$, msg$(), "|")
+	for everyCommand = 1 to nCommands
+		if(instr(msg$(everyCommand), "_QuitRequested")) Leave()
+		if(DEBUG and msg$(everyCommand)<>"") print msg$(everyCommand)
+		if left$(msg$(everyCommand),7)="ProMode" then
+			promode = val(right$(msg$(everyCommand),1))
+			DropBox Select "ABC", 1
+			Generate("A")
+		endif
+		if left$(msg$(everyCommand),4) ="CLI:" action$ = mid$(msg$(everyCommand),5)
+		if left$(msg$(everyCommand),4) = "ABC:" Generate(right$(msg$(everyCommand),1))
+		if msg$(everyCommand)="GoButton" Preview()
+		//if left$(msg$(everyCommand),8) ="TryText:" action$ = mid$(msg$(everyCommand),9): ParseTry():Preview()
+		//Would let the user type text then ENTER
+		//but also activates when the user switches to a different widget - 
+		//can't have windows opening when they feel like it
+		if msg$(everyCommand)="TryButton" action$= TextControl Get$ "TryText": ParseTry(): Preview()
+		if left$(msg$(everyCommand),2) = "XB" Window Close "W" + mid$(msg$(everyCommand),3): displaywins = displaywins -1
+	next everyCommand
+wend
+
+CloseWindow()
+
+end
+

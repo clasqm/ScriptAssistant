@@ -1,0 +1,10 @@
+sub ParseTry()
+	action$ = trim$(action$)
+	//trim off user-generated crud we don't need
+	if lower$(right$(action$,7)) = " --help" action$ = left$ (action$, len(action$) - 7):action$ = trim$(action$)
+	if lower$(right$(action$,3)) = " -h" action$ = left$ (action$, len(action$) - 3):action$ = trim$(action$)
+	if lower$(right$(action$,3)) = " /?" action$ = left$ (action$, len(action$) - 3):action$ = trim$(action$)
+	//now add our own parameter
+	action$ = "timeout 5 " + action$ + " --help"
+end sub
+

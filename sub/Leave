@@ -1,0 +1,11 @@
+sub Leave()
+	across=Window Get "MainWindow", "Position-X"
+	updown=Window Get "MainWindow", "Position-Y"
+	open "/boot/home/config/settings/ScriptAssistant.settings" for writing as #1
+		print #1 across
+		print #1 updown
+		print #1 promode
+	close #1
+	leavingLoop = true
+end sub
+

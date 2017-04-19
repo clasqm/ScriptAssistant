@@ -1,0 +1,674 @@
+########################################
+###DATA statements, if any, come here###
+########################################
+
+
+//==================
+//SA Normal Mode data
+//==================
+
+label Sevennorm
+Data 1
+Data "7za"
+
+label Anorm
+Data 2
+Data "addattr"
+Data "alert" 
+
+label Bnorm
+Data 1
+Data "basename --help"
+
+label Cnorm
+Data 17
+Data "cat --help"
+Data "cdda2wav --help"
+Data "cdrecord --help"
+Data "checkfs --help"
+Data "chgrp --help"
+Data "chmod --help"
+Data "chop --help"
+Data "chown --help"
+Data "cksum --help"
+Data "cmp --help"
+Data "comm --help"
+Data "copyattr --help"
+Data "cp --help"
+Data "csplit --help"
+Data "ctags --help"
+Data "curl --help"
+Data "cut --help"
+
+label Dnorm
+Data 8
+Data "date --help"
+Data "dd --help"
+Data "desklink"
+Data "df --help"
+Data "diff --help"
+Data "diff3 --help"
+Data "dirname --help"
+Data "du --help"
+
+Label Enorm
+Data 6
+Data "egrep --help"
+Data "eject --help"
+Data "env --help"
+Data "error"
+Data "expand --help"
+Data "expr --help"
+
+Label Fnorm
+Data 9
+Data "factor --help"
+Data "fdinfo --help"
+Data "fgrep --help"
+Data "filepanel --help"
+Data "find --help"
+Data "finddir"
+Data "fmt --help"
+Data "fold --help"
+Data "ftp -h"
+
+Label Gnorm
+Data 3
+Data "getlimits --help"
+Data"grep --help"
+Data "groups --help"
+
+Label Hnorm
+Data 3
+Data "head --help"
+Data "hey"
+Data "hostname --help"
+
+Label Inorm
+Data 3
+Data "iconv --help"
+Data "id --help"
+Data "isvolume --help"
+
+Label Jnorm
+Data 1
+Data "join --help"
+
+Label Knorm
+Data 2
+Data "keymap --help"
+Data "kill"
+
+Label Lnorm
+Data 11
+Data "less --help"
+Data "link --help"
+Data "listattr"
+Data "listdev --help"
+Data "listusb --help"
+Data "ln --help"
+Data "locate --help"
+Data "login --help"
+Data "logname --help"
+Data "ls --help"
+Data "lsindex --help"
+
+Label Mnorm
+Data 15
+Data "makebootable --help"
+Data "md5sum --help"
+Data "merge"
+Data "mimeset --help"
+Data "mkdir --help"
+Data "mkdos"
+Data "mkfifo --help"
+Data "mkfs --help"
+Data "mkindex"
+Data "mkisofs --help"
+Data "more --help"
+Data "mount --help"
+Data "mount_nfs --help"
+Data "mountvolume --help"
+Data "mv --help"
+
+Label Nnorm
+Data 3
+Data "nano --help"
+Data "nl --help"
+Data "nohup --help"
+
+Label Onorm
+Data 1
+Data "open"
+
+Label Pnorm
+Data 13
+Data "package --help"
+Data "paste --help"
+Data "ping -h"
+Data "play"
+Data "playfile"
+Data "playsound"
+Data "playwav"
+Data "pr --help"
+Data "printenv --help"
+Data "ps -h"
+Data "ptx --help"
+Data "pydoc --help"
+Data "python -h"
+
+Label Qnorm
+Data 2
+Data "query"
+Data "quit"
+
+Label Rnorm
+Data 9
+Data "rc --help"
+Data "readlink --help"
+Data "reindex --help"
+Data "renice --help"
+Data "rm --help"
+Data "rmattr"
+Data "rmdir --help"
+Data "rmindex"
+Data "rnano --help"
+
+Label Snorm
+Data 18
+Data "screenmode --help"
+Data "sed --help"
+Data "seq --help"
+Data "setdecor"
+Data "settype --help"
+Data "setversion"
+Data "sftp --help"
+Data "shutdown --help"
+Data "sleep --help"
+Data "sort --help"
+Data "split --help"
+Data "sqlite3 --help"
+Data "stat --help"
+Data "strings --help"
+Data "su --help"
+Data "sum --help"
+Data "sync --help"
+Data "sysinfo --help"
+
+Label Tnorm
+Data 13
+Data "tac --help"
+Data "tail --help"
+Data "tee --help"
+Data "telnet -h"
+Data "timeout --help"
+Data "top --help"
+Data "touch --help"
+Data "tr --help"
+Data "traceroute --help"
+Data "trash --help"
+Data "truncate --help"
+Data "tsort --help"
+Data "tty --help"
+
+Label Unorm
+Data 9
+Data "uname --help"
+Data "unchop"
+Data "uniq --help"
+Data "unmount --help"
+Data "untrash --help"
+Data "unzip --help"
+Data "unzipsfx --help"
+Data "uptime --help"
+Data "useradd --help"
+
+Label Vnorm
+Data 3
+Data "vdir --help"
+Data "version --help"
+Data "vi --help"
+
+Label Wnorm
+Data 4
+Data "waitfor"
+Data "wc --help"
+Data "wget --help"
+Data "whoami --help"
+
+Label Xnorm
+Data 3
+Data "xargs --help"
+Data "xmlwf --help"
+Data "xres  -help"
+
+Label Ynorm
+Data 1
+Data "yes --help"
+
+Label Znorm
+Data 5
+Data "zip"
+Data "zipcloak -h"
+Data "zipgrep --help"
+Data "zipinfo --help"
+Data "zipsplit -h"
+
+// Dummy to preven OUT OF DATA error
+data ""
+
+//======================
+//SA Pro mode data
+//======================
+
+label A
+Data 8
+Data "addattr"
+Data "addr2line --help"
+Data "alert"
+Data "ar --help" 
+Data "arp --help"
+Data "as --help"
+Data "autoconf --help"
+Data "awk --help"
+
+label B
+Data 8
+Data "base64 --help"
+Data "basename --help"
+Data "bash --help"
+Data "bc --help"
+Data "beep --help"
+Data "bison --help"
+Data "bunzip2 --help"
+Data "bzip2 --help"
+
+label C
+Data 28
+Data "c++ --help"
+Data "c++filt --help"
+Data "cal -h"
+Data "cat --help"
+Data "catattr"
+Data "cc --help"
+Data "cdda2wav --help"
+Data "cdrecord --help"
+Data "checkfs --help"
+Data "chgrp --help"
+Data "chmod --help"
+Data "chop --help"
+Data "chown --help"
+Data "chroot --help"
+Data "cksum --help"
+Data "cmp --help"
+Data "collectcatkeys --help"
+Data "comm --help"
+Data "compress -h"
+Data "copyattr --help"
+Data "cp --help"
+Data "cpp --help"
+Data "csplit --help"
+Data "ctags --help"
+Data "curl --help"
+Data "curl-config --help"
+Data "cut --help"
+Data "cvs --help"
+
+label D
+Data 11
+Data "date --help"
+Data "dc --help"
+Data "dd --help"
+Data "desklink"
+Data "devdump --help"
+Data "df --help"
+Data "diff --help"
+Data "diff3 --help"
+Data "dircolors --help"
+Data "dirname --help"
+Data "du --help"
+
+Label E
+Data 6
+Data "egrep --help"
+Data "eject --help"
+Data "env --help"
+Data "error"
+Data "expand --help"
+Data "expr --help"
+
+Label F
+Data 14
+Data "factor --help"
+Data "fdinfo --help"
+Data "fgrep --help"
+Data "filepanel --help"
+Data "find --help"
+Data "finddir"
+Data "flex --help"
+Data "fmt --help"
+Data "fold --help"
+Data "frcode --help"
+Data "freetype-config --help"
+Data "ftp -h"
+Data "funzip --help"
+Data "fwcontrol"
+
+Label G
+Data 15
+Data "g++ --help"
+Data "gawk --help"
+Data "gcc --help"
+Data "gcov --help"
+Data "gdb --help"
+Data "getlimits --help"
+Data "git --help"
+Data "git-receive-pack"
+Data "git-upload-pack --help"
+Data "gprof --help"
+Data "grep --help"
+Data "groups --help"
+Data "gunzip --help"
+Data "gzexe"
+Data "gzip --help"
+
+Label H
+Data 5
+Data "hd --help"
+Data "head --help"
+Data "hey"
+Data "hg help"
+Data "hostname --help"
+
+Label I
+Data 11
+Data "i586-pc-haiku-gcc --help"
+Data "iconv --help"
+Data "id --help"
+Data "ident --help"
+Data "ifconfig --help"
+Data "info --help"
+Data "infokey --help"
+Data "install --help"
+Data "install-info --help"
+Data "installsound --help"
+Data "isvolume --help"
+
+Label J
+Data 1
+Data "join --help"
+
+Label K
+Data 3
+Data "kernel_debugger --help"
+Data "keymap --help"
+Data "kill"
+
+Label L
+Data 30
+Data "ld --help"
+Data "less --help"
+Data "lessecho --help"
+Data "lesskey --help"
+Data "libtool --help"
+Data "libtoolize --help"
+Data "link --help"
+Data "listattr"
+Data "listdev --help"
+Data "listres --help"
+Data "listsem --help"
+Data "listusb --help"
+Data "ln --help"
+Data "locate --help"
+Data "logger -h"
+Data "login --help"
+Data "logname --help"
+Data "ls --help"
+Data "lsindex --help"
+Data "lzcat --help"
+Data "lzcmp --help"
+Data "lzdiff --help"
+Data "lzegrep --help"
+Data "lzfgrep --help"
+Data "lzgrep --help"
+Data "lzless --help"
+Data "lzma --help"
+Data "lzmadec --help"
+Data "lzmainfo --help"
+Data "lzmore --help" 
+
+Label M
+Data 23
+Data "m4 --help"
+Data "make --help"
+Data "makebootable --help"
+Data "makeinfo --help"
+Data "mbox2mail"
+Data "md5sum --help"
+Data "merge"
+Data "message"
+Data "mimeset --help"
+Data "mkdepend --help"
+Data "mkdir --help"
+Data "mkdos"
+Data "mkfifo --help"
+Data "mkfs --help"
+Data "mkhybrid --help"
+Data "mkindex"
+Data "mkisofs --help"
+Data "modifiers --help"
+Data "more --help"
+Data "mount --help"
+Data "mount_nfs --help"
+Data "mountvolume --help"
+Data "mv --help"
+
+Label N
+Data 6
+Data "nano --help"
+Data "neon-config --help"
+Data "netstat --help"
+Data "nl --help"
+Data "nm --help"
+Data "nohup --help"
+
+Label O
+Data 5
+Data "objcopy --help"
+Data "objdump --help"
+Data "od --help"
+Data "open"
+Data "openssl --help"
+
+Label P
+Data 22
+Data "package --help"
+Data "paste --help"
+Data "patch --help"
+Data "pdftexi2dvi --help"
+Data "perl --help"
+Data "ping -h"
+Data "ping6"
+Data "play"
+Data "playfile"
+Data "playsound"
+Data "playwav"
+Data "pr --help"
+Data "printenv --help"
+Data "printf"
+Data "prio --help"
+Data "profile --help"
+Data "protoize -h"
+Data "ps -h"
+Data "ptx --help"
+Data "pydoc --help"
+Data "python -h"
+Data "python-config --help"
+
+Label Q
+Data 2
+Data "query"
+Data "quit"
+
+Label R
+Data 15
+Data "ranlib --help"
+Data "rc --help"
+Data "readelf --help"
+Data "readlink --help"
+Data "reindex --help"
+Data "release --help"
+Data "renice --help"
+Data "rlog"
+Data "rm --help"
+Data "rmattr"
+Data "rmdir --help"
+Data "rmindex"
+Data "rnano --help"
+Data "roster --help"
+Data "route --help"
+
+Label S
+Data 39
+Data "scp --help"
+Data "screenmode --help"
+Data "sed --help"
+Data "seq --help"
+Data "setdecor"
+Data "setgcc --help"
+Data "settype --help"
+Data "setversion"
+Data "setvolume --help"
+Data "sftp --help"
+Data "sftp-server -h"
+Data "sh --help"
+Data "sha1sum --help"
+Data "shar --help"
+Data "shred --help"
+Data "shuf --help"
+Data "shutdown --help"
+Data "size --help"
+Data "sleep --help"
+Data "slogin --help"
+Data "smtpd.py --help"
+Data "sort --help"
+Data "spamdbm --help"
+Data "split --help"
+Data "sqlite3 --help"
+Data "ssh --help"
+Data "ssh-keyscan --help"
+Data "sshd -h"
+Data "stat --help"
+Data "strace --help"
+Data "strings --help"
+Data "strip --help"
+Data "stty --help"
+Data "su --help"
+Data "sum --help"
+Data "svn --help"
+Data "svnsync --help"
+Data "sync --help"
+Data "sysinfo --help"
+
+Label T
+Data 20
+Data "tac --help"
+Data "tail --help"
+Data "tar --help"
+Data "tcpdump --help"
+Data "tcptester -h"
+Data "tee --help"
+Data "telnet -h"
+Data "texi2dvi --help"
+Data "texindex"
+Data "timeout --help"
+Data "top --help"
+Data "touch --help"
+Data "tput --help"
+Data "tr --help"
+Data "traceroute --help"
+Data "translate --help"
+Data "trash --help"
+Data "truncate --help"
+Data "tsort --help"
+Data "tty --help"
+
+Label U
+Data 19
+Data "uname --help"
+Data "unchop"
+Data "unexpand --help"
+Data "uniq --help"
+Data "unlink --help"
+Data "unlzma --help"
+Data "unmount --help"
+Data "unprotoize -h"
+Data "unrar --help"
+Data "unshar --help"
+Data "untrash --help"
+Data "unxz --help"
+Data "unzip --help"
+Data "unzipsfx --help"
+Data "updatedb --help"
+Data "uptime --help"
+Data "useradd --help"
+Data "uudecode --help"
+Data "uuencode --help"
+
+Label V
+Data 4
+Data "vdir --help"
+Data "version --help"
+Data "vmstat --help"
+Data "vsyasm --help"
+
+Label W
+Data 5
+Data "waitfor"
+Data "watch --help"
+Data "wc --help"
+Data "wget --help"
+Data "whoami --help"
+
+Label X
+Data 17
+Data "xargs --help"
+Data "xml2-config --help"
+Data "xmlcatalog --help"
+Data "xmllint --help"
+Data "xmlwf --help"
+Data "xres  -help"
+Data "xsubpp"
+Data "xz --help"
+Data "xzcat --help"
+Data "xzcmp --help"
+Data "xzdec --help"
+Data "xzdiff --help"
+Data "xzegrep --help"
+Data "xzfgrep --help"
+Data "xzgrep --help"
+Data "xzless --help"
+Data "xzmore --help" 
+
+Label Y
+Data 3
+Data "yacc --help"
+Data "yasm --help"
+Data "yes --help"
+
+Label Z
+Data 11
+Data "zcat --help"
+Data "zcmp --help"
+Data "zdiff --help"
+Data "zforce"
+Data "zgrep --help"
+Data "zip"
+Data "zipcloak -h"
+Data "zipgrep --help"
+Data "zipinfo --help"
+Data "zipsplit -h"
+Data "znew --help"
+
+// Dummy to preven OUT OF DATA error
+data ""

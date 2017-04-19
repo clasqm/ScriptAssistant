@@ -1,0 +1,10 @@
+#!/bin/sh
+cd /boot/home/projects/Scriptassistant/PackagingFolder
+package create -b scriptassistant_0.2.1-2_gcc2.hpkg
+sleep 0.5
+package add scriptassistant_0.2.1-2_gcc2.hpkg data apps documentation bin
+sleep 0.5
+addattr BeShare:Info "A little utility to display the help content of scripting commands" scriptassistant_0.2.1-2_gcc2.hpkg
+becopy scriptassistant_0.2.1-2_gcc2.hpkg "/Storage/Haiku/My ports"
+mv scriptassistant_0.2.1-2_gcc2.hpkg /boot/home/projects/repo
+
