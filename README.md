@@ -14,6 +14,8 @@ Except that some commands will only respond to -h rather than --help. And a few 
 
 Enter ScriptAssistant. This little app lets you select a command and throw up a window (up to 12 of them at a time) containing that command's built-in help.
 
+![Script Assistant](script-assistant.png)
+
 ScriptAssistant requires yab to be installed. You might have it on your system alreadyand if not, the packaging system should have organised it for you.
 
 ScriptAssistant has two modes. Normal mode contains the commands you are most likely to need while scripting: no programming or networking stuff, and .zip as the only kind of compression. Pro Mode contains absolutely everything I could find on a regulation Haiku setup that I could coax to spit out some help. This is the collection that will keep growing in future updates. Of course, any command will only work if that file is actually installed on your system. For example, I might add commands from the package Ghostscript to the database, but if you do not have Ghostscript installed, that will just display an error. The reason for this is that ScriptAssistant does not store the help data: it actually runs the command and captures the result for display. This way, the help you get is always the latest version.
