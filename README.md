@@ -1,11 +1,14 @@
-ScriptAssistant v0.2
+# ScriptAssistant v0.2
+
 By Michel Clasquin-Johnson
+
 Public Domain Software 2015
+
 Written for Haiku in yab, using the Yabadabbadoo IDE
 
 So you write a lot of shell scripts, or you just like hacking on the Terminal. And you know how to get to the built-in help for each command:
 
-command --help
+    command --help
 
 Except that some commands will only respond to -h rather than --help. And a few require you to type the command by itself, with no parameters at all. And now the help is displayed in the Terminal you were working in, so you need to open another one to continue working, and you lose your command history when you do that ...
 
@@ -25,3 +28,4 @@ ScriptAssistant is Public Domain software. Which means "go ahead and build a sof
 
 A version of ScriptAssistant is also incorporated in my alternative yab IDE, Yabbadabbadoo. Nothing terrible should happen if you run both versions.
 
+Get it here: https://github.com/clasqm/ScriptAssistant
